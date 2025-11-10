@@ -8,6 +8,7 @@ The dataset includes 6 sheets (3 Valid and 3 Invalid) representing daily traffic
 contains metrics such as the number of unique devices (IDFAs), IP addresses, user agents, and 
 derived ratios like requests per IDFA and IDFA-to-IP ratio. 
 ## Observations 
+
 • Apps 1–3 (Valid) showed stable requests_per_idfa ratios throughout- Indicates genuine 
 user traffic where each device generated a consistent number of requests. No abnormal 
 spikes were detected. 
@@ -27,11 +28,13 @@ requests_per_idfa values- Typical of real-world, distributed user traffic where 
 device has its own IP and normal ad request frequency. 
 
 ## Key Insights 
-### Insights 
+### Insights
+
 • High request density and low IP diversity strongly correlate with IVT. 
 • Gradual build-up before IVT tagging suggests delayed detection mechanisms. 
 • Stable, balanced traffic shows natural user behavior. 
 ### Recommendations 
+
 • Set early warning thresholds on requests_per_idfa and idfa_ip_ratio. 
 • Implement real-time monitoring dashboards (Power BI / Python dashboards). 
 • Investigate apps with repeating IVT cycles to identify patterns or automation.
